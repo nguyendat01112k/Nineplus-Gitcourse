@@ -7,3 +7,16 @@ function animate_string() {
         textNode.data = text;
     }, 60);
 }
+
+var love = document.getElementById("love");
+var nolove = document.getElementById("no-love");
+
+love.addEventListener("click", myFunction);
+function myFunction() {
+    alert('Mình Biết Mà ahihi')
+}
+
+nolove.addEventListener("mouseover", lovefunction);
+function lovefunction() {
+    nolove.classList.toggle('move')
+}
